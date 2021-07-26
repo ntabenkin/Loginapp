@@ -10,13 +10,12 @@ import kotlinx.parcelize.Parcelize
 //userName
 //password
 //
+
 @Parcelize
 data class User(
     val email:String,
     val userName:String,
     val password:String,
-    val location:String,
+   // val location:String,
     val binAmount:String,
-
-
 ):Parcelable

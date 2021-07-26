@@ -16,7 +16,7 @@ data class Driver(
     val userName:String,
     val password:String,
     val location:String,
-    val binAmount:String,
+    val binAmount:String
 
 
     ):Parcelable

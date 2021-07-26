@@ -14,9 +14,15 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.login.setOnClickListener {
-            val user = User(binding.email.text.toString(),binding.password.text.toString())
             val intent = Intent(this,MainActivity::class.java)
-            intent.putExtra("user",user)
+           // intent.putExtra("user",user)
+            startActivity(intent)
+            finish()
+        }
+        binding.register.setOnClickListener {
+           //val user = User(binding.email.text.toString(),binding.password.text.toString())
+            val intent = Intent(this,RegisterActivity::class.java)
+            //intent.putExtra("user",user)
             startActivity(intent)
             finish()
         }

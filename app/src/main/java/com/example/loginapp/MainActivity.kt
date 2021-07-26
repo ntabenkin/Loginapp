@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.loginapp.databinding.ActivityMainBinding
 
+private lateinit var binding: ActivityMainBinding
+
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -19,6 +21,11 @@ class MainActivity : AppCompatActivity() {
             finish()
         }else{
             binding.welcomeMsg.text = getString(R.string.welcome,user.email)
+            binding.pass.text = getString(R.string.password,user.password)
+            binding.mail.text = getString(R.string.email,user.binAmount)
+            binding.welcomeMsg.text = getString(R.string.welcome,user.email)
+
+
 
         }
 
